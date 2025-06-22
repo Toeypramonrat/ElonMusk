@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk | Visionary Entrepreneur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(90deg, #e11d48, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        
+        /* Parallax effect */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center space-x-2">
+                        <i class="fab fa-space-shuttle text-blue-500 text-2xl"></i>
+                        <span class="text-xl font-bold gradient-text">ELON MUSK</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="#companies" class="hover:text-blue-400 transition">Companies</a>
+                    <a href="#vision" class="hover:text-blue-400 transition">Vision</a>
+                    <a href="#timeline" class="hover:text-blue-400 transition">Timeline</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-400 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/95 backdrop-blur-md">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</a>
+                <a href="#companies" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Companies</a>
+                <a href="#vision" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Vision</a>
+                <a href="#timeline" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Timeline</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-40 parallax" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        <span class="gradient-text">Elon Musk</span><br>
+                        <span class="text-3xl md:text-4xl font-normal">Making Humanity Multiplanetary</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Entrepreneur, engineer, inventor, and visionary dedicated to solving humanity's biggest challenges through technology and innovation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#about" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition transform hover:scale-105">
+                            Explore More
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border border-blue-400 hover:bg-blue-900/30 rounded-full font-medium transition transform hover:scale-105">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/800px-Elon_Musk_Royal_Society_%28crop2%29.jpg" 
+                         alt="Elon Musk" 
+                         class="rounded-full border-4 border-blue-500/50 w-64 h-64 md:w-80 md:h-80 object-cover floating shadow-xl shadow-blue-500/20">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">About Elon</span>
+                </h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-300">
+                    A visionary entrepreneur pushing the boundaries of what's possible in space exploration, electric vehicles, artificial intelligence, and sustainable energy.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-blue-900/50 p-3 rounded-full">
+                            <i class="fas fa-graduation-cap text-blue-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Early Life & Education</h3>
+                            <p class="text-gray-300">
+                                Born in Pretoria, South Africa in 1971. Earned degrees in Physics and Economics from the University of Pennsylvania. Began a PhD at Stanford but left after 2 days to pursue entrepreneurial ventures.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-blue-900/50 p-3 rounded-full">
+                            <i class="fas fa-brain text-blue-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Philosophy</h3>
+                            <p class="text-gray-300">
+                                Believes in taking risks to drive innovation, working extremely hard, and focusing on technologies that will shape humanity's future. Advocates for sustainable energy and becoming a multi-planetary species.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-blue-900/50 p-3 rounded-full">
+                            <i class="fas fa-trophy text-blue-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Achievements</h3>
+                            <p class="text-gray-300">
+                                Named Fortune's Businessperson of the Year (2013), ranked #1 on Forbes' Most Innovative Leaders (2019), and listed among Time's 100 most influential people multiple times.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gray-700/50 p-6 rounded-xl border border-gray-600">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">Key Facts</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-600">
+                                <span class="text-gray-300">Born</span>
+                                <span class="font-medium">June 28, 1971</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-600">
+                                <span class="text-gray-300">Citizenship</span>
+                                <span class="font-medium">South Africa, Canada, USA</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-600">
+                                <span class="text-gray-300">Net Worth</span>
+                                <span class="font-medium">~$200B (fluctuates)</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-600">
+                                <span class="text-gray-300">Children</span>
+                                <span class="font-medium">10</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-600">
+                                <span class="text-gray-300">First Company</span>
+                                <span class="font-medium">Zip2 (1995)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 -z-10 w-full h-full rounded-xl border-2 border-blue-500/30"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="companies" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Companies & Ventures</span>
+                </h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-300">
+                    Elon Musk has founded or leads several groundbreaking companies that are transforming industries and pushing technological boundaries.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tesla Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition group">
+                    <div class="h-48 bg-red-900 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/1200px-Tesla_Motors.svg.png" alt="Tesla Logo" class="h-24 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">Tesla</h3>
+                        <p class="text-gray-300 mb-4">
+                            Accelerating the world's transition to sustainable energy through electric vehicles, battery storage, and solar products.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Founded: 2003 (Joined 2004)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SpaceX Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition group">
+                    <div class="h-48 bg-black flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/1200px-SpaceX-Logo.svg.png" alt="SpaceX Logo" class="h-16 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">SpaceX</h3>
+                        <p class="text-gray-300 mb-4">
+                            Revolutionizing space technology with the ultimate goal of enabling human life on Mars through reusable rockets.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Founded: 2002</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Neuralink Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition group">
+                    <div class="h-48 bg-purple-900 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Neuralink_Logo.png/800px-Neuralink_Logo.png" alt="Neuralink Logo" class="h-16 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">Neuralink</h3>
+                        <p class="text-gray-300 mb-4">
+                            Developing ultra-high bandwidth brain-machine interfaces to connect humans and computers.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Founded: 2016</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- The Boring Company Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition group">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Boring_Company_Logo.svg/1200px-The_Boring_Company_Logo.svg.png" alt="Boring Company Logo" class="h-16 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">The Boring Company</h3>
+                        <p class="text-gray-300 mb-4">
+                            Building underground transportation networks to solve urban traffic congestion through tunnels.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Founded: 2016</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- X (Twitter) Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition group">
+                    <div class="h-48 bg-black flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/X_icon_2.svg/2048px-X_icon_2.svg.png" alt="X Logo" class="h-16 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">X (Twitter)</h3>
+                        <p class="text-gray-300 mb-4">
+                            Acquired Twitter in 2022, aiming to create an "everything app" with payments, messaging, and more.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Acquired: 2022</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OpenAI Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition group">
+                    <div class="h-48 bg-gray-900 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/1200px-OpenAI_Logo.svg.png" alt="OpenAI Logo" class="h-16 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">OpenAI</h3>
+                        <p class="text-gray-300 mb-4">
+                            Co-founded to ensure artificial intelligence benefits all of humanity. Now known for ChatGPT and GPT models.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Co-founded: 2015 (Left board in 2018)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="py-20 parallax" style="background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2111&q=80');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Vision For The Future</span>
+                </h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-300">
+                    Elon Musk's ambitious goals aim to secure humanity's future and push technological boundaries.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900/80 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Multiplanetary Species</h3>
+                    <p class="text-gray-300">
+                        Establishing a self-sustaining city on Mars with Starship to ensure the survival of humanity in case of planetary catastrophe.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-900/80 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sustainable Energy</h3>
+                    <p class="text-gray-300">
+                        Transitioning the world to sustainable energy through electric vehicles, solar power, and large-scale battery storage solutions.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-900/80 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI Symbiosis</h3>
+                    <p class="text-gray-300">
+                        Developing brain-computer interfaces to allow humans to merge with AI and keep pace with artificial intelligence.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-900/80 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Transport Revolution</h3>
+                    <p class="text-gray-300">
+                        Creating high-speed underground transportation networks and autonomous electric vehicles to revolutionize urban mobility.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-900/80 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Global Internet</h3>
+                    <p class="text-gray-300">
+                        Providing worldwide high-speed internet through Starlink's satellite constellation, especially to underserved areas.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-900/80 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Population Growth</h3>
+                    <p class="text-gray-300">
+                        Addressing declining birth rates by encouraging responsible population growth to maintain civilization's progress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Career Timeline</span>
+                </h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-300">
+                    Key milestones in Elon Musk's extraordinary entrepreneurial journey.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 w-1 h-full bg-blue-500/30 transform -translate-x-1/2"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-8 md:space-y-0">
+                    <!-- Item 1 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12 md:pr-8 md:text-right">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">Zip2 Corporation</h3>
+                                <p class="text-gray-300">Co-founded his first company, an online city guide software for newspapers</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">1995</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">X.com and PayPal</h3>
+                                <p class="text-gray-300">Founded X.com which later became PayPal, revolutionizing online payments</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">1999</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12 md:pr-8 md:text-right">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">SpaceX Founded</h3>
+                                <p class="text-gray-300">Established Space Exploration Technologies to reduce space transportation costs</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">2002</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-space-shuttle"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-car"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">Joined Tesla</h3>
+                                <p class="text-gray-300">Led Series A funding round and became Chairman of Tesla Motors (later CEO)</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">2004</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12 md:pr-8 md:text-right">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">Falcon 1 Success</h3>
+                                <p class="text-gray-300">SpaceX's Falcon 1 becomes first privately funded liquid-fueled rocket to reach orbit</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">2008</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Item 6 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">Neuralink & Boring Co.</h3>
+                                <p class="text-gray-300">Founded Neuralink (BCI tech) and The Boring Company (tunnel construction)</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">2016</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 7 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12 md:pr-8 md:text-right">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">Starship Development</h3>
+                                <p class="text-gray-300">SpaceX begins developing Starship, a fully reusable super heavy-lift launch vehicle</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">2019</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Item 8 -->
+                    <div class="md:flex justify-between items-center w-full">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:flex md:w-2/12 justify-center">
+                            <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="p-6 bg-gray-700 rounded-lg border-l-4 border-blue-500">
+                                <h3 class="text-xl font-bold mb-2">Acquired Twitter</h3>
+                                <p class="text-gray-300">Purchased Twitter for $44 billion, aiming to transform it into an "everything app"</p>
+                                <div class="mt-2 text-sm text-blue-400 font-medium">2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Famous Quotes</span>
+                </h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">
+                        "When something is important enough, you do it even if the odds are not in your favor."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-900 flex items-center justify-center">
+                            <i class="fas fa-space-shuttle"></i>
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium">On Persistence</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">
+                        "Failure is an option here. If things are not failing, you are not innovating enough."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-900 flex items-center justify-center">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium">On Innovation</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">
+                        "The future of humanity is going to bifurcate in two directions: Either it's going to become multiplanetary, or it's going to remain confined to one planet and eventually there's going to be an extinction event."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-900 flex items-center justify-center">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium">On Mars Colonization</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">
+                        "I think it's very important to have a feedback loop, where you're constantly thinking about what you've done and how you could be doing it better."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-900 flex items-center justify-center">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium">On Improvement</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">
+                        "Persistence is very important. You should not give up unless you are forced to give up."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-900 flex items-center justify-center">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium">On Determination</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">
+                        "If you get up in the morning and think the future is going to be better, it is a bright day. Otherwise, it's not."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-900 flex items-center justify-center">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium">On Optimism</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Get In Touch</span>
+                </h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-300">
+                    While Elon Musk is extremely busy, you can try reaching out through these channels.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-900/50 p-3 rounded-full">
+                                <i class="fab fa-twitter text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Twitter (X)</h4>
+                                <p class="text-gray-300">Most active platform</p>
+                                <a href="https://twitter.com/elonmusk" target="_blank" class="text-blue-400 hover:underline inline-block mt-2">@elonmusk</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-900/50 p-3 rounded-full">
+                                <i class="fas fa-envelope text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Email</h4>
+                                <p class="text-gray-300">For official inquiries</p>
+                                <span class="text-gray-400 inline-block mt-2">(Typically through company channels)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-900/50 p-3 rounded-full">
+                                <i class="fas fa-building text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Companies</h4>
+                                <p class="text-gray-300">Official channels</p>
+                                <div class="mt-2 space-y-1">
+                                    <a href="https://www.tesla.com" target="_blank" class="text-blue-400 hover:underline block">Tesla</a>
+                                    <a href="https://www.spacex.com" target="_blank" class="text-blue-400 hover:underline block">SpaceX</a>
+                                    <a href="https://neuralink.com" target="_blank" class="text-blue-400 hover:underline block">Neuralink</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">Send a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="you@example.com">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                            <select id="subject" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option>General Inquiry</option>
+                                <option>Business Proposal</option>
+                                <option>Media Request</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Your message..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition transform hover:scale-[1.02]">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:justify-start">
+                    <a href="#" class="flex items-center space-x-2">
+                        <i class="fab fa-space-shuttle text-blue-500 text-2xl"></i>
+                        <span class="text-xl font-bold gradient-text">ELON MUSK</span>
+                    </a>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <div class="flex justify-center md:justify-end space-x-6">
+                        <a href="https://twitter.com/elonmusk" target="_blank" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="https://www.tesla.com" target="_blank" class="text-gray-400 hover:text-red-400">
+                            <i class="fab fa-tesla text-2xl"></i>
+                        </a>
+                        <a href="https://www.spacex.com" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fas fa-rocket text-2xl"></i>
+                        </a>
+                        <a href="https://neuralink.com" target="_blank" class="text-gray-400 hover:text-purple-400">
+                            <i class="fas fa-brain text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-8 md:flex md:items-center md:justify-between">
+                <p class="text-center text-base text-gray-400 md:text-left">
+                    &copy; 2023 Elon Musk. All rights reserved. This is a fan-made website.
+                </p>
+                <div class="mt-4 md:mt-0 flex justify-center md:justify-end space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form submission (mock)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your message! This is a demo form and no message will be sent.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
